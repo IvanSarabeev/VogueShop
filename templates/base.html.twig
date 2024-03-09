@@ -12,7 +12,51 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
+    <body class="w-full min-h-screen overflow-x-hidden bg-main">
+        <header class="w-full h-24 flex items-center justify-between px-8 bg-header">
+            <a class="size-36" href="{{ path('app_homepage') }}">
+                <img class="w-auto h-auto aspect-auto object-cover object-center" src="./{{ asset('images/vogue-logo.png') }}" alt="vogue-logo">
+            </a>
+            <menu class="gap-2 md:gap-4 xl:gap-6 flex items-center justify-end">
+                <li>
+                    <a href="{{ path('app_homepage') }}">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_homepage') }}">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_homepage') }}">
+                        Shop
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_homepage') }}">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_homepage') }}">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_homepage') }}">
+                        Sign up
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('app_register') }}">
+                        <img class="size-6" src="{{ asset('svgs/user.svg') }}" alt="signup">
+                    </a>
+                </li>
+            </menu>
+        </header>
+        {% block body %}
+
+        {% endblock %}
     </body>
 </html>
