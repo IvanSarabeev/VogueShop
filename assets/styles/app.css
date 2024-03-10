@@ -69,3 +69,19 @@
 .box-text {
     @apply text-sm font-normal text-gray-500 leading-6;
 }
+
+.feat-box {
+    @apply gap-x-4 flex items-center justify-center;
+}
+
+.feat-box-content {
+    @apply gap-y-1.5 flexColumn items-start font-sans text-left;
+}
+
+.feat-box-content > h4 {
+    @apply text-base font-semibold capitalize;
+}
+
+.feat-box-content > p {
+    @apply text-xs text-gray-700;
+}
