@@ -10,6 +10,62 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: lightgray;
+.nav-link {
+    @apply font-sans text-base font-semibold text-[#252525] no-underline transition-all ease-in-out duration-150 hover:text-amber-50
+}
+
+.icon {
+    @apply size-6 font-semibold hover:scale-110 transition-all ease-in-out duration-150
+}
+
+.max-container {
+    @apply max-w-[1440px] mx-auto;
+}
+
+.padding-container {
+    @apply px-6 md:px-12 lg:px-16 xl:px-20;
+}
+
+.section-padding {
+    @apply py-10 md:py-16 xl:py-20;
+}
+
+.flexCenter {
+    @apply flex items-center justify-center mx-auto;
+}
+
+.flexColumn {
+    @apply flex flex-col justify-center;
+}
+
+.flexBetween {
+    @apply flex items-center justify-between;
+}
+
+.flexEnd {
+    @apply flex items-end justify-end;
+}
+
+.flexStart {
+    @apply flex items-start justify-start;
+}
+
+.main-banner-box {
+    @apply size-96 lg:h-[460px] 2xl:w-[830px] grid md:row-span-2 grid-cols-subgrid lg:grid-cols-subgrid lg:col-span-2 rounded-lg xl:rounded-xl bg-main-banner aspect-auto object-cover;
+}
+
+.banner-box {
+    @apply h-56 w-80 rounded-md xl:rounded-lg;
+}
+
+.box-subtitle {
+    @apply text-xs uppercase text-[#d9a390];
+}
+
+.box-title {
+    @apply text-xl font-bold capitalize text-[#2d3138];
+}
+
+.box-text {
+    @apply text-sm font-normal text-gray-500 leading-6;
 }

@@ -1,7 +1,45 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
-    <h1 class="text-5xl">Welcome</h1>
+    <section class="flexColumn section-padding max-container">
+        <div class="gap-x-2 md:gap-x-4 gap-y-2.5 md:gap-y-3 grid grid-rows-1 lg:grid-rows-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center place-content-center">
+            <div class="main-banner-box">
+                <div class="gap-y-4 w-screen flexStart flex-col pl-8 pt-14">
+                    <p class="text-sm text-orange-600 font-semibold uppercase">Supercharged for pros.</p>
+                    <h2 class="text-5xl text-nowrap text-[#272c2f] font-bold w-full">iPad S13+ Pro.</h2>
+                    <p class="text-gray-700 text-base font-medium">From $999 or $41.62/mo. <br> for 24 mo. Footnote*</p>
+                    <button type="button" class="uppercase text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Buy Now</button>
+                </div>
+            </div>
+            <div class="banner-box bg-banner-two">
+                <div class="gap-y-3.5 flexStart flex-col pl-6 pt-10">
+                    <p class="box-subtitle">Best sale</p>
+                    <h3 class="box-title">Gaming Laptops</h3>
+                    <p class="box-text">From $1699.00 or <br> $64.92/mo.</p>
+                </div>
+            </div>
+            <div class="banner-box bg-banner-three">
+                <div class="gap-y-3.5 flexStart flex-col pl-6 pt-10">
+                    <p class="box-subtitle">New arrival</p>
+                    <h3 class="box-title">Buy IPAD Air</h3>
+                    <p class="box-text">From $599.00 or <br> $49.91/mo for 12 mo.*</p>
+                </div>
+            </div>
+            <div class="banner-box bg-banner-four">
+                <div class="gap-y-3.5 flexStart flex-col pl-6 pt-10">
+                    <p class="box-subtitle">15% OFF</p>
+                    <h3 class="box-title">Smartwatch 7</h3>
+                    <p class="box-text">Shop the latest brand <br> styles and colors.</p>
+                </div>
+            </div>
+            <div class="banner-box bg-banner-five">
+                <div class="gap-y-3.5 flexStart flex-col pl-6 pt-10">
+                    <p class="box-subtitle">Free Engraving</p>
+                    <h3 class="box-title">AirPods Max</h3>
+                    <p class="box-text">High-fidelity playback & <br> ultra-low distortion</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock %}
